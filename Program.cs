@@ -8,8 +8,13 @@ class Program
     /*
     так пишется многострочный комментарий
     */
+
+    // запуск файлов с уроками отсюда
     {
-        Console.WriteLine("Hello, World!");
+        // Variables.Test();
+        Console_Input.Test();
+
+
         Console.ReadLine();
     }
 }
