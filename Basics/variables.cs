@@ -1,21 +1,28 @@
+namespace Learning_C_;
 
-int variable;
+public static class Variables
+{
+    public static void Test()
+    {
+        int variable;
 
-variable = 10;
+        variable = 10;
 
-Console.WriteLine(variable);
+        Console.WriteLine(variable);
 
-// так-же можно сразу при объявлении присваивать значения
+        // так-же можно сразу при объявлении присваивать значения
 
-string hello = "Hello world!";
+        string hello = "Hello world!";
 
-Console.WriteLine(hello);
+        Console.WriteLine(hello);
 
-// можно объявить сразу несколько переменных с одним типом
+        // можно объявить сразу несколько переменных с одним типом
 
-int a, b;
+        int a, b;
 
-a = 10;
-b = 5;
+        a = 10;
+        b = 5;
 
-Console.WriteLine(a+b);
+        Console.WriteLine(a+b);
+    }
+}
