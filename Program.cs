@@ -12,7 +12,9 @@ class Program
     // запуск файлов с уроками отсюда
     {
         // Variables.Test();
-        Console_Input.Test();
+        // Console_Input.Test();
+        // Convert_String.Test();
+        Math_Operators.Test();
 
 
         Console.ReadLine();
