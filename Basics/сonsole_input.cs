@@ -4,7 +4,7 @@ public static class Console_Input
 {
     public static void Test()
     {
-        string data;
+        string ? data;
 
         data = Console.ReadLine();
 
