@@ -14,7 +14,8 @@ class Program
         // Variables.Test();
         // Console_Input.Test();
         // Convert_String.Test();
-        Math_Operators.Test();
+        // Math_Operators.Test();
+        Practice_1.Mean_finder();
 
 
         Console.ReadLine();
