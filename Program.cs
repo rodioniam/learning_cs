@@ -15,9 +15,14 @@ class Program
         // Console_Input.Test();
         // Convert_String.Test();
         // Math_Operators.Test();
-        Practice_1.Mean_finder();
+        // Practice_1.Mean_finder();
+        // Increment_Decrement.Test();
+        // Comparison_Operators.Test();
+        // If_Else_Statement.Test();
+        // Practice_2.Test();
+        Logic_Opearators.Test();
 
-
+        Console.WriteLine("Press any button to exit program...");
         Console.ReadLine();
     }
 }
