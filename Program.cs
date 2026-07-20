@@ -20,7 +20,10 @@ class Program
         // Comparison_Operators.Test();
         // If_Else_Statement.Test();
         // Practice_2.Test();
-        Logic_Opearators.Test();
+        // Logic_Opearators.Test();
+        // Switch_Operator.Test();
+        Practice_3.Test();
+
 
         Console.WriteLine("Press any button to exit program...");
         Console.ReadLine();
