@@ -16,9 +16,8 @@ public static class If_Else_Statement
             Console.WriteLine("Your character is sick!");
         }
         else
-        {
+            // если в блоке if..else одна строчка, то скобочки {} можно не использовать
             Console.WriteLine("Your character is okay");
-        }
 
     }
 }
