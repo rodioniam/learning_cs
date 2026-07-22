@@ -22,10 +22,11 @@ class Program
         // Practice_2.Test();
         // Logic_Opearators.Test();
         // Switch_Operator.Test();
-        Practice_3.Test();
+        // Practice_3.Test();
+        While_Cycle.Test();
 
 
-        Console.WriteLine("Press any button to exit program...");
+        Console.WriteLine("Press 'Enter' to exit program...");
         Console.ReadLine();
     }
 }
