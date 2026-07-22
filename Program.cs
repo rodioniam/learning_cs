@@ -23,7 +23,10 @@ class Program
         // Logic_Opearators.Test();
         // Switch_Operator.Test();
         // Practice_3.Test();
-        While_Cycle.Test();
+        // While_Cycle.Test();
+        // Practice_4.Test();
+        // For_Cycle.Test();
+        Break_Continue.Test();
 
 
         Console.WriteLine("Press 'Enter' to exit program...");
