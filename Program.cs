@@ -26,7 +26,9 @@ class Program
         // While_Cycle.Test();
         // Practice_4.Test();
         // For_Cycle.Test();
-        Break_Continue.Test();
+        // Break_Continue.Test();
+        // Nested_Loops.Test();
+        Practice_5.Test();
 
 
         Console.WriteLine("Press 'Enter' to exit program...");
