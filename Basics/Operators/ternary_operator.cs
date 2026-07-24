@@ -28,7 +28,7 @@ public static class Ternary_Operator
 
         Console.Write("Write number: ");
 
-        int userInput = int.Parse(Console.ReadLine());
+        int userInput = int.Parse(Console.ReadLine()!);
 
         int outputData = userInput < 0 ? 0: userInput;
 
