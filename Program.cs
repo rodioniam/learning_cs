@@ -28,7 +28,8 @@ class Program
         // For_Cycle.Test();
         // Break_Continue.Test();
         // Nested_Loops.Test();
-        Practice_5.Test();
+        // Practice_5.Test();
+        Ternary_Operator.Test();
 
 
         Console.WriteLine("Press 'Enter' to exit program...");
