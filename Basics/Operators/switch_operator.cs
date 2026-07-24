@@ -8,7 +8,7 @@ public static class Switch_Operator
         Console.WriteLine("Write 1 or 2.");
 
         int? user_input, user_input_2;
-        user_input = int.Parse(Console.ReadLine());
+        user_input = int.Parse(Console.ReadLine()!);
 
         // может принимать не только числа, но и строки (+ видимо другие данные)
         switch (user_input)
@@ -32,7 +32,7 @@ public static class Switch_Operator
                 break;
         }
 
-        user_input_2 = int.Parse(Console.ReadLine());
+        user_input_2 = int.Parse(Console.ReadLine()!);
 
         switch (user_input_2)
         {
