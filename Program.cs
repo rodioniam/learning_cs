@@ -29,7 +29,10 @@ class Program
         // Break_Continue.Test();
         // Nested_Loops.Test();
         // Practice_5.Test();
-        Ternary_Operator.Test();
+        // Ternary_Operator.Test();
+        // OneDimensionalArray.Test();
+        // ArraysWithLoops.Test();
+        Practice_6.Test();
 
 
         Console.WriteLine("Press 'Enter' to exit program...");
