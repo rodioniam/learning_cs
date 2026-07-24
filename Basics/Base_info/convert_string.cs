@@ -43,7 +43,7 @@ public static class Convert_String
         double float_parsed = double.Parse(float_str, numberFormatInfo);
 
         string mixed_str = "5.4hello";
-        string str_num = "5.4";
+        // string str_num = "5.4";
 
         try
         {
