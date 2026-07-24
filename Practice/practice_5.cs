@@ -5,7 +5,7 @@ public static class Practice_5
     public static void Test()
     {
         Console.Write("Enter height: ");
-        int height = int.Parse(Console.ReadLine());
+        int height = int.Parse(Console.ReadLine()!);
         Console.Clear();
     
         char tag = '#';
