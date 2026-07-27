@@ -32,7 +32,11 @@ class Program
         // Ternary_Operator.Test();
         // OneDimensionalArray.Test();
         // ArraysWithLoops.Test();
-        Practice_6.Test();
+        // Practice_6.Test();
+        // WorkingWithArrays.Test();
+        // ForEachLoop.Test();
+        TwoDimensionalArray.Test();
+        
 
 
         Console.WriteLine("Press 'Enter' to exit program...");
