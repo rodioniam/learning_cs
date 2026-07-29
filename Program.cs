@@ -37,7 +37,12 @@ class Program
         // ForEachLoop.Test();
         // TwoDimensionalArray.Test();
         // JaggedArray.Test();
-        NdArrays.Test();
+        // NdArrays.Test();
+        // Console.WriteLine(Functions.Sum(2, 2)); // это вызов первого метода класса
+        // Console.WriteLine(Functions.Minus(4, 2)); // это вызов второго метода класса
+        // Functions.PrintResult(); // Вызов метода класса, который сам что то печатает, а внутри использует функцию из своего же класса
+        // Practice_7.PrintString();
+        Console.WriteLine(Practice_7.ReturnIndex(7, 100));        
         
 
 
