@@ -35,11 +35,13 @@ class Program
         // Practice_6.Test();
         // WorkingWithArrays.Test();
         // ForEachLoop.Test();
-        TwoDimensionalArray.Test();
+        // TwoDimensionalArray.Test();
+        // JaggedArray.Test();
+        NdArrays.Test();
         
 
 
-        Console.WriteLine("Press 'Enter' to exit program...");
+        Console.WriteLine("\nPress 'Enter' to exit program...");
         Console.ReadLine();
     }
 }
