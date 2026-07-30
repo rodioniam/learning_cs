@@ -42,7 +42,9 @@ class Program
         // Console.WriteLine(Functions.Minus(4, 2)); // это вызов второго метода класса
         // Functions.PrintResult(); // Вызов метода класса, который сам что то печатает, а внутри использует функцию из своего же класса
         // Practice_7.PrintString();
-        Console.WriteLine(Practice_7.ReturnIndex(7, 100));        
+        // Console.WriteLine(Practice_7.ReturnIndex(7, 100));
+        ReferenceValueTypes.RenderResultOne();
+        ReferenceValueTypes.RenderResultTwo();    
         
 
 
