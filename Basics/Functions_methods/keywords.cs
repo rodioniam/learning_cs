@@ -1,6 +1,3 @@
-using System.Diagnostics.Tracing;
-using System.Reflection.Metadata;
-
 namespace Learning_C_;
 
 public static class ReferenceRef
@@ -76,4 +73,79 @@ public static class ReferenceRef
     {
         return ref numbers[0];
     }
+}
+
+
+public static class Out
+{
+    public static void RenderResult()
+    {
+        int variable = 0; // при использовании с out у переменной изначально может не быть никакого значения.
+        
+        Func(out variable); // логика такая же как и у ref - передача данных по ссылке
+        Func(out int a); // можно объявлять переменную прямо в вызове метода
+
+        Console.WriteLine(variable);
+        Console.WriteLine(a);
+    }
+
+
+    public static void Func(out int value)
+    {
+        value = 10; // только out обязует давать переменной какое то значение внутри метода
+    }
+}
+
+
+public static class IN
+{
+    public static void RenderResult()
+    {
+        int number = 5;
+
+        Console.WriteLine(number);
+        Func(in number);
+    }
+
+
+    public static void Func(in int value)
+    {
+        Console.WriteLine(value);
+    }
+}
+
+
+public static class Params
+{
+    public static void RenderResult()
+    {
+        int result = Sum(2, 2, 5, 1); // нет необходимости каждый раз изменять метод
+
+        Console.WriteLine(result);
+        
+        Func("string", 12, 4.2, true);
+    }
+
+    public static int Sum(params int[] numbers)
+    {
+        int result = 0;
+
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            result += numbers[i];
+        }
+
+        return result;
+    }
+
+    public static void Func(params object[] parameters)
+    {
+        string message = "Data type of {1}: {0}";
+
+        foreach (var item in parameters)
+        {
+            Console.WriteLine(message, item.GetType(), item); // видимо фишка такая что можно в строке указать номера, а в консоли написать через запятую что помещать вместо цифр
+        }
+    }
+
 }

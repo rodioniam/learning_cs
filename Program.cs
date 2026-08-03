@@ -48,7 +48,12 @@ class Program
         // NullType.NullConditional();
         // ReferenceRef.RenderResult();
         // ReferenceRef.RenderResultTwo();
-        Practice_8.Result();
+        // Practice_8.Result();
+        // Out.RenderResult();
+        // IN.RenderResult();
+        // Params.RenderResult();
+        // Recursion.RenderResult();
+        Practice_9.RenderResult();
 
 
         Console.WriteLine("\nPress 'Enter' to exit program...");
