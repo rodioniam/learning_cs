@@ -7,10 +7,10 @@ public static class Practice_8
     public static void Result()
     {
 
-        int [] arr = {1, 2, 3, 4};
+        int [] arr = {1, 2, 3, 4, 5};
 
-        // AppendToArray(ref arr, 43);
-        Insert(ref arr, 100, 2);
+
+        Remove(ref arr, 0);
 
         Console.WriteLine(string.Join(',', arr));
     }
@@ -33,12 +33,18 @@ public static class Practice_8
         arr = arrNew;
     }
 
-
-    public static void AppendToArray<T>(ref T[] arr, T value, bool from_start = false)
+/// <summary>
+/// Добавление элемента в конец или начало массива
+/// </summary>
+/// <typeparam name="T"></typeparam>
+/// <param name="arr"></param>
+/// <param name="value"></param>
+/// <param name="from_start">по умолчанию false, добавление с конца</param>
+    public static void AppendToArray<T>(ref T[] arr, T value, bool fromStart = false)
     {
         T[] newArray = new T[arr.Length + 1];
 
-        if (from_start)
+        if (fromStart)
         {
             newArray[0] = value;
 
@@ -60,6 +66,13 @@ public static class Practice_8
         arr = newArray;
     }
 
+/// <summary>
+/// Вставка в массив по индексу со смещением
+/// </summary>
+/// <typeparam name="T"></typeparam>
+/// <param name="arr"></param>
+/// <param name="value"></param>
+/// <param name="position"></param>
     public static void Insert<T>(ref T[] arr, T value, uint position)
     {
         T[] newArray = new T[arr.Length + 1];
@@ -78,5 +91,56 @@ public static class Practice_8
 
         arr = newArray;
 
+    }
+
+/// <summary>
+/// удалить первый или последний элемент из массива
+/// </summary>
+/// <typeparam name="T"></typeparam>
+/// <param name="arr"></param>
+/// <param name="fromStart"></param>
+    public static void Pop<T>(ref T[] arr, bool fromStart = false)
+    {
+        T[] newArray = new T[arr.Length - 1];
+
+        if (fromStart)
+        {
+            for (int i = 0; i < newArray.Length; i++)
+            {
+                newArray[i] = arr[i + 1];
+            }
+        }
+        else
+        {
+            for (int i = 0; i < arr.Length - 1; i++)
+            {
+                newArray[i] = arr[i];
+            }
+        }
+
+        arr = newArray;
+    }
+
+/// <summary>
+/// удаление элемента из массива по индексу
+/// </summary>
+/// <typeparam name="T"></typeparam>
+/// <param name="arr"></param>
+/// <param name="position"></param>
+    public static void Remove<T>(ref T[] arr, int position)
+    {
+        T[] newArray = new T[arr.Length-1];
+
+        for (int i = 0; i < position; i++)
+        {
+            newArray[i] = arr[i];
+        }
+
+        for (int i = position; i < newArray.Length; i++)
+        {
+            newArray[i] = arr[i + 1];
+        }
+
+        arr = newArray;
     }
 }
