@@ -149,3 +149,12 @@ public static class Params
     }
 
 }
+
+
+public static class Enums
+{
+    public static void RenderResult()
+    {
+        
+    }
+}
