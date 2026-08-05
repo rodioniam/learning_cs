@@ -57,7 +57,8 @@ class Program
         // DataTransformation.RenderResult();
         // DataTransformation.Overflow();
         // Nullable.RenderResult();
-        VarKeyword.RenderResult();
+        // VarKeyword.RenderResult();
+        Enums.RenderResult();
 
 
         Console.WriteLine("\nPress 'Enter' to exit program...");

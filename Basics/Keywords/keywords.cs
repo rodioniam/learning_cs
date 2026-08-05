@@ -155,6 +155,95 @@ public static class Enums
 {
     public static void RenderResult()
     {
+        // Func();
+        Func2();
         
+    }
+
+    // пример того как работают объекты enum - перечисления
+    public static void Func()
+    {
+        while (true)
+        {
+            ConsoleKey key = Console.ReadKey().Key;
+
+            int keyCode = (int) key;
+
+            Console.WriteLine($"\tEnum {key}\tKey Code {keyCode}");
+
+            if (key == ConsoleKey.Enter)
+            {
+                Console.WriteLine("You pressed enter");
+            }
+        }
+    }
+
+    // так создается свой объект enum
+    public enum DayOfWeek : byte // так определяется тип enum вручную
+    {
+        Monday = 1, // не обязательно присваивать всем числовое значение
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday,
+        Sunday
+    }
+
+    public static void Func2()
+    {
+        DayOfWeek dayOfWeek = DayOfWeek.Friday;
+
+        Console.WriteLine(dayOfWeek);
+        Console.WriteLine((int)dayOfWeek); // поддерживает явную конвертацию в int
+        Console.WriteLine((DayOfWeek)2); // обратная операция -- какое значение у выбранного элемента
+
+        DayOfWeek nextDay = GetNextDay(dayOfWeek); // так применяется метод для enum
+        Console.WriteLine(nextDay);
+        
+
+        // есть полезный метод для того чтобы не забить enum не существующими значениями
+        DayOfWeek dayOfWeekExample;
+
+        byte value = 4;
+
+        // проверит есть ли такое значение в enum
+        if (Enum.IsDefined(typeof(DayOfWeek), value))
+        {
+            dayOfWeekExample = (DayOfWeek)value;
+        }
+        else
+        {
+            throw new Exception("Invalid DayOfWeek value.");
+        }
+        Console.WriteLine(dayOfWeekExample);
+
+        Console.WriteLine();
+
+        // так можно получить список всех элементов в enum коллекции.
+
+        var values = Enum.GetValues(typeof(DayOfWeek));
+
+        foreach (var item in values)
+        {
+            Console.WriteLine(item);
+        }
+        
+        // так же объекты enum можно парсить
+        Console.WriteLine("\nEnums can be parsed: ");
+        string? str = Console.ReadLine();
+        DayOfWeek dayOfWeekParse = (DayOfWeek)Enum.Parse(typeof(DayOfWeek), str ?? "monday", ignoreCase: true);
+        Console.WriteLine(dayOfWeekParse);
+    }
+
+    // так реализуются методы для enum
+    public static DayOfWeek GetNextDay(DayOfWeek day)
+    {
+        if (day < DayOfWeek.Sunday)
+        {
+            return day + 1;
+        }
+
+        return DayOfWeek.Monday;
     }
 }
