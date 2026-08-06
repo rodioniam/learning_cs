@@ -67,7 +67,9 @@ class Program
         // Classes.StudentExample();
         // Modifiers.Test();
         // OOP.Incapsulation();
-        Keyword_This.KeywordThis();
+        // Keyword_This.KeywordThis();
+        // GetSet.Get_Set();
+        Static.StaticClassField();
 
 
         Console.WriteLine("\nPress 'Enter' to exit program...");
