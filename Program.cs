@@ -61,7 +61,7 @@ class Program
         // Enums.RenderResult();
 
         /*
-        OOP is C#
+        OOP in C#
         */
 
         // Classes.StudentExample();
@@ -69,7 +69,11 @@ class Program
         // OOP.Incapsulation();
         // Keyword_This.KeywordThis();
         // GetSet.Get_Set();
-        Static.StaticClassField();
+        // Static.StaticClassField();
+        // StaticClassMethods.Result();
+        // StaticClassConstructor.DbExample();
+        // StaticClass.Result();
+        ExtentionMethods.Result();
 
 
         Console.WriteLine("\nPress 'Enter' to exit program...");
