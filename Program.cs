@@ -75,7 +75,9 @@ class Program
         // StaticClass.Result();
         // ExtentionMethods.Result();
         // PartailCLass.Example();
-        ConstVsReadOnly.Result();
+        // ConstVsReadOnly.Result();
+        // Inheritance.Result();
+        BaseKeyword.Result();
 
 
         Console.WriteLine("\nPress 'Enter' to exit program...");
