@@ -73,7 +73,9 @@ class Program
         // StaticClassMethods.Result();
         // StaticClassConstructor.DbExample();
         // StaticClass.Result();
-        ExtentionMethods.Result();
+        // ExtentionMethods.Result();
+        // PartailCLass.Example();
+        ConstVsReadOnly.Result();
 
 
         Console.WriteLine("\nPress 'Enter' to exit program...");
