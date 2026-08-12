@@ -77,7 +77,9 @@ class Program
         // PartailCLass.Example();
         // ConstVsReadOnly.Result();
         // Inheritance.Result();
-        BaseKeyword.Result();
+        // BaseKeyword.Result();
+        // TypeCasting.Result();
+        ProtectedModefier.Result();
 
 
         Console.WriteLine("\nPress 'Enter' to exit program...");
