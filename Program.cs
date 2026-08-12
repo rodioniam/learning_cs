@@ -79,7 +79,9 @@ class Program
         // Inheritance.Result();
         // BaseKeyword.Result();
         // TypeCasting.Result();
-        ProtectedModefier.Result();
+        // ProtectedModefier.Result();
+        // VirtualMethods.Result();
+        AbstractClass.Result();
 
 
         Console.WriteLine("\nPress 'Enter' to exit program...");
