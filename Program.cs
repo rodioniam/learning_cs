@@ -81,7 +81,9 @@ class Program
         // TypeCasting.Result();
         // ProtectedModefier.Result();
         // VirtualMethods.Result();
-        AbstractClass.Result();
+        // AbstractClass.Result();
+        // Interface.Result();
+        InterfaceUpdate.Result();
 
 
         Console.WriteLine("\nPress 'Enter' to exit program...");
