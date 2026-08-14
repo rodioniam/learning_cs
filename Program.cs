@@ -83,7 +83,8 @@ class Program
         // VirtualMethods.Result();
         // AbstractClass.Result();
         // Interface.Result();
-        InterfaceUpdate.Result();
+        // InterfaceUpdate.Result();
+        InterfaceInheritance.Result();
 
 
         Console.WriteLine("\nPress 'Enter' to exit program...");
