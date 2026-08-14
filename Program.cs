@@ -84,7 +84,9 @@ class Program
         // AbstractClass.Result();
         // Interface.Result();
         // InterfaceUpdate.Result();
-        InterfaceInheritance.Result();
+        // InterfaceInheritance.Result();
+        // InterfaceExplicitImplementation.Result();
+        Structures.Result();
 
 
         Console.WriteLine("\nPress 'Enter' to exit program...");
