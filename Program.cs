@@ -86,7 +86,8 @@ class Program
         // InterfaceUpdate.Result();
         // InterfaceInheritance.Result();
         // InterfaceExplicitImplementation.Result();
-        Structures.Result();
+        // Structures.Result();
+        BoxingUnboxing.Result();
 
 
         Console.WriteLine("\nPress 'Enter' to exit program...");
