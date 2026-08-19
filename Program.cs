@@ -88,7 +88,8 @@ class Program
         // InterfaceExplicitImplementation.Result();
         // Structures.Result();
         // BoxingUnboxing.Result();
-        Generics.Result();
+        // Generics.Result();
+        IteratorPattern.Result();
 
 
         Console.WriteLine("\nPress 'Enter' to exit program...");
