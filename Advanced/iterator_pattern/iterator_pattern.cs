@@ -132,7 +132,7 @@ public class Worker
         yield return new Worker { Name = "Marry" };
         yield return new Worker { Name = "Dillon" };
         yield break;
-        yield return new Worker { Name = "Looser" };
+        // yield return new Worker { Name = "Looser" }; // прерывает код
     }
 
     public static IEnumerable<Worker> GetWorkers() // тут происходит создание всех объектов и их возвращение сразу
