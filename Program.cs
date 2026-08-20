@@ -89,7 +89,11 @@ class Program
         // Structures.Result();
         // BoxingUnboxing.Result();
         // Generics.Result();
-        IteratorPattern.Result();
+        // IteratorPattern.Result();
+        // Delegates.Example();
+        // Lambda.Example();
+        // MultiCastDelegate.Example();
+        EventsPatternObserver.Example();
 
 
         Console.WriteLine("\nPress 'Enter' to exit program...");
