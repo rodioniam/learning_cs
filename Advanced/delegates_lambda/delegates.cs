@@ -57,3 +57,28 @@ public static class Delegates
     // свой делегат
     delegate int Operation(int a, int b);
 }
+
+
+class MultiCastDelegate
+{
+    public static void Example()
+    {
+        Notify notify = SendSms;
+
+        // мульти-каст делегат -- один делегат может содержать несколько методов с одинаковой сигнатурой
+        notify += SendEmail;
+
+        notify("Hello World!"); // сработает оба метода этого делегата
+    }
+
+    delegate void Notify(string message);
+
+    static void SendSms(string message)
+    {
+        Console.WriteLine($"SMS: {message}");
+    }
+    static void SendEmail(string message)
+    {
+        Console.WriteLine($"Email: {message}");
+    }
+}
